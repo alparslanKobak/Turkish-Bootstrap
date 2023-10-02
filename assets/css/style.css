@@ -1,0 +1,1601 @@
+:root {
+
+    /* Renk Paleti */
+
+    --siyah: #000000 !important;
+    --hafif-siyah: #333333 !important;
+    --gri: #808080 !important;
+    --hafif-gri: #bfbfbf !important;
+    --koyu-gri: #404040 !important;
+    --beyaz: #ffffff !important;
+    --dumanli-beyaz: #e5dede !important;
+    --kirmizi: #ff0000 !important;
+    --hafif-kirmizi: #fb5d5d !important;
+    --mavi: #0000ff !important;
+    --hafif-mavi: #5d5dfb !important;
+    --yesil: #00ff00 !important;
+    --hafif-yesil: #5dfb5d !important;
+    --turuncu: #ff8000 !important;
+    --hafif-turuncu: #ffbf80 !important;
+    --sari: #ffff00 !important;
+    --hafif-sari: #ffff80 !important;
+    --mor: #8000ff !important;
+    --hafif-mor: #bf80ff !important;
+    --pembe: #ff00ff !important;
+    --hafif-pembe: #ff80ff !important;
+    --kahverengi: #804000 !important;
+    --hafif-kahverengi: #bf8040 !important;
+    --turkuaz: #00ffff !important;
+    --hafif-turkuaz: #80ffff !important;
+
+    /* Fontlar */
+
+    --font-Roboto: 'Roboto', sans-serif;
+    --font-OpenSans: 'Open Sans', sans-serif;
+    --font-Montserrat: 'Montserrat', sans-serif;
+    --font-Poppins: 'Poppins', sans-serif;
+    --font-Times: 'Times New Roman', Times, serif;
+    --font-Arial: 'Arial', sans-serif;
+
+    /* Boyutlar */
+
+    --boyut-otomatik: auto;
+    --boyut-4-px: 4px;
+    --boyut-8-px: 8px;
+    --boyut-16-px: 16px;
+    --boyut-24-px: 24px;
+    --boyut-32-px: 32px;
+    --boyut-40-px: 40px;
+    --boyut-48-px: 48px;
+
+
+
+
+
+}
+
+/* Genel Ayarlar */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-size: var(--boyut-16-px);
+    color: var(--siyah);
+    background-color: var(--beyaz);
+}
+
+a {
+    text-decoration: none;
+
+}
+
+
+/* Izgara Yapısı */
+
+.konteyner-telefon-768 {
+    width: 100%;
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.konteyner-tablet-1024 {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.konteyner-1200 {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.konteyner-buyuk-2600 {
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 100%;
+    max-width: 2600px;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.konteyner-4k {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 3840px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+}
+
+.konteyner-buyuk-2600 {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 2600px;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.satir {
+
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    box-sizing: border-box;
+    width: 98%;
+    max-width: 98%;
+
+}
+
+.sutun-1 {
+    width: 8.33%;
+}
+
+.sutun-2 {
+    width: 16.66%;
+}
+
+.sutun-3 {
+    width: 25%;
+}
+
+.sutun-4 {
+    width: 33.33%;
+}
+
+.sutun-5 {
+    width: 41.66%;
+}
+
+.sutun-6 {
+    width: 50%;
+}
+
+.sutun-7 {
+    width: 58.33%;
+}
+
+.sutun-8 {
+    width: 66.66%;
+}
+
+.sutun-9 {
+    width: 75%;
+}
+
+.sutun-10 {
+    width: 83.33%;
+}
+
+.sutun-11 {
+    width: 91.66%;
+}
+
+.sutun-12 {
+    width: 100%;
+}
+
+.buton {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-family: var(--font-Times);
+    font-size: var(--boyut-16-px);
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+
+
+.buton-mavi {
+    background-color: var(--mavi);
+    color: var(--beyaz);
+}
+
+.buton-mavi:hover {
+    background-color: var(--hafif-mavi);
+    color: var(--siyah);
+}
+
+.buton-dis-cizgi-mavi {
+    background-color: var(--beyaz);
+    color: var(--mavi);
+    border: 1px solid var(--mavi);
+}
+
+.buton-dis-cizgi-mavi:hover {
+    background-color: var(--mavi);
+    color: var(--beyaz);
+}
+
+.buton-kirmizi {
+    background-color: var(--kirmizi);
+    color: var(--beyaz);
+}
+
+.buton-kirmizi:hover {
+    background-color: var(--hafif-kirmizi);
+    color: var(--siyah);
+}
+
+.buton-dis-cizgi-kirmizi {
+    background-color: var(--beyaz);
+    color: var(--kirmizi);
+    border: 1px solid var(--kirmizi);
+}
+
+.buton-dis-cizgi-kirmizi:hover {
+    background-color: var(--kirmizi);
+    color: var(--beyaz);
+}
+
+.buton-yesil {
+    background-color: var(--yesil);
+    color: var(--beyaz);
+}
+
+.buton-yesil:hover {
+    background-color: var(--hafif-yesil);
+    color: var(--siyah);
+}
+
+.buton-dis-cizgi-yesil {
+    background-color: var(--beyaz);
+    color: var(--yesil);
+    border: 1px solid var(--yesil);
+}
+
+.buton-dis-cizgi-yesil:hover {
+    background-color: var(--yesil);
+    color: var(--beyaz);
+}
+
+.buton-turuncu {
+    background-color: var(--turuncu);
+    color: var(--beyaz);
+}
+
+.buton-turuncu:hover {
+    background-color: var(--hafif-turuncu);
+    color: var(--siyah);
+}
+
+.buton-dis-cizgi-turuncu {
+    background-color: var(--beyaz);
+    color: var(--turuncu);
+    border: 1px solid var(--turuncu);
+}
+
+.buton-dis-cizgi-turuncu:hover {
+    background-color: var(--turuncu);
+    color: var(--beyaz);
+}
+
+.buton-sari {
+    background-color: var(--sari);
+    color: var(--siyah);
+}
+
+.buton-sari:hover {
+    background-color: var(--hafif-sari);
+    color: var(--siyah);
+}
+
+.buton-dis-cizgi-sari {
+    background-color: var(--beyaz);
+    color: var(--sari);
+    border: 1px solid var(--sari);
+}
+
+.buton-dis-cizgi-sari:hover {
+    background-color: var(--sari);
+    color: var(--beyaz);
+}
+
+.buton-mor {
+    background-color: var(--mor);
+    color: var(--beyaz);
+}
+
+.buton-mor:hover {
+    background-color: var(--hafif-mor);
+    color: var(--siyah);
+}
+
+.buton-dis-cizgi-mor {
+    background-color: var(--beyaz);
+    color: var(--mor);
+    border: 1px solid var(--mor);
+}
+
+.buton-dis-cizgi-mor:hover {
+    background-color: var(--mor);
+    color: var(--beyaz);
+}
+
+.buton-pembe {
+    background-color: var(--pembe);
+    color: var(--beyaz);
+}
+
+.buton-pembe:hover {
+    background-color: var(--hafif-pembe);
+    color: var(--siyah);
+}
+
+.buton-dis-cizgi-pembe {
+    background-color: var(--beyaz);
+    color: var(--pembe);
+    border: 1px solid var(--pembe);
+}
+
+.buton-dis-cizgi-pembe:hover {
+    background-color: var(--pembe);
+    color: var(--beyaz);
+}
+
+
+.buton-kahverengi {
+    background-color: var(--kahverengi);
+    color: var(--beyaz);
+}
+
+.buton-kahverengi:hover {
+    background-color: var(--hafif-kahverengi);
+    color: var(--siyah);
+}
+
+.buton-dis-cizgi-kahverengi {
+    background-color: var(--beyaz);
+    color: var(--kahverengi);
+    border: 1px solid var(--kahverengi);
+}
+
+.buton-dis-cizgi-kahverengi:hover {
+    background-color: var(--kahverengi);
+    color: var(--beyaz);
+}
+
+.buton-turkuaz {
+    background-color: var(--turkuaz);
+    color: var(--siyah);
+}
+
+.buton-turkuaz:hover {
+    background-color: var(--hafif-turkuaz);
+    color: var(--siyah);
+}
+
+.buton-dis-cizgi-turkuaz {
+    background-color: var(--beyaz);
+    color: var(--turkuaz);
+    border: 1px solid var(--turkuaz);
+}
+
+.buton-dis-cizgi-turkuaz:hover {
+    background-color: var(--turkuaz);
+    color: var(--beyaz);
+}
+
+.buton-siyah {
+    background-color: var(--siyah);
+    color: var(--beyaz);
+}
+
+.buton-siyah:hover {
+    background-color: var(--hafif-siyah);
+    color: var(--beyaz);
+}
+
+.buton-dis-cizgi-siyah {
+    background-color: var(--beyaz);
+    color: var(--siyah);
+    border: 1px solid var(--siyah);
+}
+
+.buton-dis-cizgi-siyah:hover {
+    background-color: var(--siyah);
+    color: var(--beyaz);
+}
+
+.buton-beyaz {
+    background-color: var(--beyaz);
+    color: var(--siyah);
+}
+
+.buton-beyaz:hover {
+    background-color: var(--dumanli-beyaz);
+    color: var(--siyah);
+}
+
+.buton-dis-cizgi-beyaz {
+    background-color: var(--siyah);
+    color: var(--beyaz);
+    border: 1px solid var(--beyaz);
+}
+
+.buton-dis-cizgi-beyaz:hover {
+    background-color: var(--beyaz);
+    color: var(--siyah);
+}
+
+.buton-gri {
+    background-color: var(--gri);
+    color: var(--beyaz);
+}
+
+.buton-gri:hover {
+    background-color: var(--hafif-gri);
+    color: var(--siyah);
+}
+
+.buton-dis-cizgi-gri {
+    background-color: var(--beyaz);
+    color: var(--gri);
+    border: 1px solid var(--gri);
+}
+
+.buton-dis-cizgi-gri:hover {
+    background-color: var(--gri);
+    color: var(--beyaz);
+}
+
+.buton-koyu-gri {
+    background-color: var(--koyu-gri);
+    color: var(--beyaz);
+}
+
+.buton-koyu-gri:hover {
+    background-color: var(--hafif-gri);
+    color: var(--siyah);
+}
+
+.buton-dis-cizgi-koyu-gri {
+    background-color: var(--beyaz);
+    color: var(--koyu-gri);
+    border: 1px solid var(--koyu-gri);
+}
+
+.buton-dis-cizgi-koyu-gri:hover {
+    background-color: var(--koyu-gri);
+    color: var(--beyaz);
+}
+
+.buton-hafif-gri {
+    background-color: var(--hafif-gri);
+    color: var(--siyah);
+}
+
+.buton-hafif-gri:hover {
+    background-color: var(--gri);
+    color: var(--beyaz);
+}
+
+.buton-dis-cizgi-hafif-gri {
+    background-color: var(--siyah);
+    color: var(--hafif-gri);
+    border: 1px solid var(--hafif-gri);
+}
+
+.buton-dis-cizgi-hafif-gri:hover {
+    background-color: var(--hafif-gri);
+    color: var(--siyah);
+}
+
+.buton-dumanli-beyaz {
+    background-color: var(--dumanli-beyaz);
+    color: var(--siyah);
+}
+
+.buton-dumanli-beyaz:hover {
+    background-color: var(--beyaz);
+    color: var(--siyah);
+}
+
+.buton-dis-cizgi-dumanli-beyaz {
+    background-color: var(--siyah);
+    color: var(--dumanli-beyaz);
+    border: 1px solid var(--dumanli-beyaz);
+}
+
+.buton-dis-cizgi-dumanli-beyaz:hover {
+    background-color: var(--dumanli-beyaz);
+    color: var(--siyah);
+}
+
+
+/* Arkaplanlar */
+
+.arkaplan-siyah {
+    background-color: var(--siyah);
+    color: var(--beyaz);
+}
+
+.arkaplan-dumanli-beyaz {
+    background-color: var(--dumanli-beyaz);
+    color: var(--siyah);
+}
+
+.arkaplan-hafif-gri {
+    background-color: var(--hafif-gri);
+    color: var(--siyah);
+}
+
+.arkaplan-gri {
+    background-color: var(--gri);
+    color: var(--beyaz);
+}
+
+.arkaplan-koyu-gri {
+    background-color: var(--koyu-gri);
+    color: var(--beyaz);
+}
+
+.arkaplan-beyaz {
+    background-color: var(--beyaz);
+    color: var(--siyah);
+}
+
+.arkaplan-kirmizi {
+    background-color: var(--kirmizi);
+    color: var(--beyaz);
+}
+
+.arkaplan-hafif-kirmizi {
+    background-color: var(--hafif-kirmizi);
+    color: var(--siyah);
+}
+
+.arkaplan-mavi {
+    background-color: var(--mavi);
+    color: var(--beyaz);
+}
+
+.arkaplan-hafif-mavi {
+    background-color: var(--hafif-mavi);
+    color: var(--siyah);
+}
+
+.arkaplan-yesil {
+    background-color: var(--yesil);
+    color: var(--beyaz);
+}
+
+.arkaplan-hafif-yesil {
+    background-color: var(--hafif-yesil);
+    color: var(--siyah);
+}
+
+.arkaplan-turuncu {
+    background-color: var(--turuncu);
+    color: var(--beyaz);
+}
+
+.arkaplan-hafif-turuncu {
+    background-color: var(--hafif-turuncu);
+    color: var(--siyah);
+}
+
+.arkaplan-sari {
+    background-color: var(--sari);
+    color: var(--siyah);
+}
+
+.arkaplan-hafif-sari {
+    background-color: var(--hafif-sari);
+    color: var(--siyah);
+}
+
+.arkaplan-mor {
+    background-color: var(--mor);
+    color: var(--beyaz);
+}
+
+.arkaplan-hafif-mor {
+    background-color: var(--hafif-mor);
+    color: var(--siyah);
+}
+
+.arkaplan-pembe {
+    background-color: var(--pembe);
+    color: var(--beyaz);
+}
+
+.arkaplan-hafif-pembe {
+    background-color: var(--hafif-pembe);
+    color: var(--siyah);
+}
+
+.arkaplan-kahverengi {
+    background-color: var(--kahverengi);
+    color: var(--beyaz);
+}
+
+.arkaplan-hafif-kahverengi {
+    background-color: var(--hafif-kahverengi);
+    color: var(--siyah);
+}
+
+.arkaplan-turkuaz {
+    background-color: var(--turkuaz);
+    color: var(--beyaz);
+}
+
+.arkaplan-hafif-turkuaz {
+    background-color: var(--hafif-turkuaz);
+    color: var(--siyah);
+}
+
+/* Yazı Boyutları */
+
+.yazi-boyut-8-px {
+    font-size: var(--boyut-8-px);
+}
+
+.yazi-boyut-16-px {
+    font-size: var(--boyut-16-px);
+}
+
+.yazi-boyut-24-px {
+    font-size: var(--boyut-24-px);
+}
+
+.yazi-boyut-32-px {
+    font-size: var(--boyut-32-px);
+}
+
+.yazi-boyut-40-px {
+    font-size: var(--boyut-40-px);
+}
+
+.yazi-boyut-48-px {
+    font-size: var(--boyut-48-px);
+}
+
+/* Yazı Renkleri */
+
+.yazi-siyah {
+    color: var(--siyah);
+}
+
+.yazi-hafif-siyah {
+    color: var(--hafif-siyah);
+}
+
+.yazi-gri {
+    color: var(--gri);
+}
+
+.yazi-hafif-gri {
+    color: var(--hafif-gri);
+}
+
+.yazi-koyu-gri {
+    color: var(--koyu-gri);
+}
+
+.yazi-beyaz {
+    color: var(--beyaz);
+}
+
+.yazi-dumanli-beyaz {
+    color: var(--dumanli-beyaz);
+}
+
+.yazi-kirmizi {
+    color: var(--kirmizi);
+}
+
+.yazi-hafif-kirmizi {
+    color: var(--hafif-kirmizi);
+}
+
+.yazi-mavi {
+    color: var(--mavi);
+}
+
+.yazi-hafif-mavi {
+    color: var(--hafif-mavi);
+}
+
+.yazi-yesil {
+    color: var(--yesil);
+}
+
+.yazi-hafif-yesil {
+    color: var(--hafif-yesil);
+}
+
+.yazi-turuncu {
+    color: var(--turuncu);
+}
+
+.yazi-hafif-turuncu {
+    color: var(--hafif-turuncu);
+}
+
+.yazi-sari {
+    color: var(--sari);
+}
+
+.yazi-hafif-sari {
+    color: var(--hafif-sari);
+}
+
+.yazi-mor {
+    color: var(--mor);
+}
+
+.yazi-hafif-mor {
+    color: var(--hafif-mor);
+}
+
+.yazi-pembe {
+    color: var(--pembe);
+}
+
+.yazi-hafif-pembe {
+    color: var(--hafif-pembe);
+}
+
+.yazi-kahverengi {
+    color: var(--kahverengi);
+}
+
+.yazi-hafif-kahverengi {
+    color: var(--hafif-kahverengi);
+}
+
+.yazi-turkuaz {
+    color: var(--turkuaz);
+}
+
+.yazi-hafif-turkuaz {
+    color: var(--hafif-turkuaz);
+}
+
+/* Yazı Fontları */
+
+.yazi-font-Roboto {
+    font-family: var(--font-Roboto);
+}
+
+.yazi-font-OpenSans {
+    font-family: var(--font-OpenSans);
+}
+
+.yazi-font-Montserrat {
+    font-family: var(--font-Montserrat);
+}
+
+.yazi-font-Poppins {
+    font-family: var(--font-Poppins);
+}
+
+.yazi-font-Times {
+    font-family: var(--font-Times);
+}
+
+.yazi-font-Arial {
+    font-family: var(--font-Arial);
+}
+
+/* Yazı Stilleri */
+
+.yazi-stil-normal {
+    font-style: normal;
+}
+
+.yazi-stil-italic {
+    font-style: italic;
+}
+
+.yazi-stil-oblique {
+    font-style: oblique;
+}
+
+/* Yazı kalınlıkları */
+
+.yazi-kalinlik-normal {
+    font-weight: normal;
+}
+
+.yazi-kalinlik-bold {
+    font-weight: bold;
+}
+
+.yazi-kalinlik-100 {
+    font-weight: 100;
+}
+
+.yazi-kalinlik-200 {
+    font-weight: 200;
+}
+
+.yazi-kalinlik-300 {
+    font-weight: 300;
+}
+
+.yazi-kalinlik-400 {
+    font-weight: 400;
+}
+
+.yazi-kalinlik-500 {
+    font-weight: 500;
+}
+
+.yazi-kalinlik-600 {
+    font-weight: 600;
+}
+
+.yazi-kalinlik-700 {
+    font-weight: 700;
+}
+
+.yazi-kalinlik-800 {
+    font-weight: 800;
+}
+
+.yazi-kalinlik-900 {
+    font-weight: 900;
+}
+
+/* Yazı Açıklığı */
+
+.yazi-aciklik-normal {
+    letter-spacing: normal;
+}
+
+.yazi-aciklik-1-px {
+    letter-spacing: 1px;
+}
+
+.yazi-aciklik-2-px {
+    letter-spacing: 2px;
+}
+
+.yazi-aciklik-3-px {
+    letter-spacing: 3px;
+}
+
+.yazi-aciklik-4-px {
+    letter-spacing: 4px;
+}
+
+.yazi-aciklik-5-px {
+    letter-spacing: 5px;
+}
+
+.yazi-aciklik-6-px {
+    letter-spacing: 6px;
+}
+
+.yazi-aciklik-7-px {
+    letter-spacing: 7px;
+}
+
+.yazi-aciklik-8-px {
+    letter-spacing: 8px;
+}
+
+
+/* Yatay İçerik Hizalamaları */
+
+.yatay-hizalama-sol {
+    text-align: left;
+}
+
+.yatay-hizalama-sag {
+    text-align: right;
+}
+
+.yatay-hizalama-ortala {
+    text-align: center;
+}
+
+
+
+/* Dikey İçerik Hizalamaları */
+
+.dikey-hizalama-ust {
+    align-items: flex-start;
+}
+
+.dikey-hizalama-alt {
+    align-items: flex-end;
+}
+
+.dikey-hizalama-ortala {
+    align-items: center;
+}
+
+/* İçerik Hizalamaları */
+
+.hizalama-sol {
+    justify-content: flex-start;
+}
+
+.hizalama-sag {
+    justify-content: flex-end;
+}
+
+.hizalama-ortala {
+    justify-content: center;
+}
+
+.hizalama-ust {
+    align-items: flex-start;
+}
+
+.hizalama-alt {
+    align-items: flex-end;
+}
+
+.hizalama-ortala {
+    align-items: center;
+}
+
+/* İçerik Dış Kenar Pay Ölçüleri */
+
+.kenar-pay-otomatik {
+    margin: auto;
+}
+
+.kenar-pay-4px {
+    margin: 4px;
+}
+
+.kenar-pay-8px {
+    margin: 8px;
+}
+
+.kenar-pay-16px {
+    margin: 16px;
+}
+
+.kenar-pay-24px {
+    margin: 24px;
+}
+
+.kenar-pay-32px {
+    margin: 32px;
+}
+
+.sol-otomatik-kenar-pay {
+    margin-left: auto;
+}
+
+.sol-4px-kenar-pay {
+    margin-left: 4px;
+}
+
+.sol-8px-kenar-pay {
+    margin-left: 8px;
+}
+
+.sol-16px-kenar-pay {
+    margin-left: 16px;
+}
+
+.sol-24px-kenar-pay {
+    margin-left: 24px;
+}
+
+.sol-32px-kenar-pay {
+    margin-left: 32px;
+}
+
+
+
+.sag-otomatik-kenar-pay {
+    margin-right: auto;
+}
+
+.sag-4px-kenar-pay {
+    margin-right: 4px;
+}
+
+.sag-8px-kenar-pay {
+    margin-right: 8px;
+}
+
+.sag-16px-kenar-pay {
+    margin-right: 16px;
+}
+
+.sag-24px-kenar-pay {
+    margin-right: 24px;
+}
+
+.sag-32px-kenar-pay {
+    margin-right: 32px;
+}
+
+
+
+.ust-otomatik-kenar-pay {
+    margin-top: auto;
+}
+
+.ust-4px-kenar-pay {
+    margin-top: 4px;
+}
+
+.ust-8px-kenar-pay {
+    margin-top: 8px;
+}
+
+.ust-16px-kenar-pay {
+    margin-top: 16px;
+}
+
+.ust-24px-kenar-pay {
+    margin-top: 24px;
+}
+
+.ust-32px-kenar-pay {
+    margin-top: 32px;
+}
+
+
+
+.alt-otomatik-kenar-pay {
+    margin-bottom: auto;
+}
+
+.alt-4px-kenar-pay {
+    margin-bottom: 4px;
+}
+
+.alt-8px-kenar-pay {
+    margin-bottom: 8px;
+}
+
+.alt-16px-kenar-pay {
+    margin-bottom: 16px;
+}
+
+.alt-24px-kenar-pay {
+    margin-bottom: 24px;
+}
+
+.alt-32px-kenar-pay {
+    margin-bottom: 32px;
+}
+
+/* İçerik İç Kenar Pay Ölçüleri */
+
+.ic-otomatik-kenar-pay {
+    padding: auto;
+}
+
+.ic-4px-kenar-pay {
+    padding: 4px;
+}
+
+.ic-8px-kenar-pay {
+    padding: 8px;
+}
+
+.ic-16px-kenar-pay {
+    padding: 16px;
+}
+
+.ic-24px-kenar-pay {
+    padding: 24px;
+}
+
+.ic-32px-kenar-pay {
+    padding: 32px;
+}
+
+.sol-ic-otomatik-kenar-pay {
+    padding-left: auto;
+}
+
+.sol-ic-4px-kenar-pay {
+    padding-left: 4px;
+}
+
+.sol-ic-8px-kenar-pay {
+    padding-left: 8px;
+}
+
+.sol-ic-16px-kenar-pay {
+    padding-left: 16px;
+}
+
+.sol-ic-24px-kenar-pay {
+    padding-left: 24px;
+}
+
+.sol-ic-32px-kenar-pay {
+    padding-left: 32px;
+}
+
+.sag-ic-otomatik-kenar-pay {
+    padding-right: auto;
+}
+
+.sag-ic-4px-kenar-pay {
+    padding-right: 4px;
+}
+
+.sag-ic-8px-kenar-pay {
+    padding-right: 8px;
+}
+
+.sag-ic-16px-kenar-pay {
+    padding-right: 16px;
+}
+
+.sag-ic-24px-kenar-pay {
+    padding-right: 24px;
+}
+
+.sag-ic-32px-kenar-pay {
+    padding-right: 32px;
+}
+
+.ust-ic-otomatik-kenar-pay {
+    padding-top: auto;
+}
+
+.ust-ic-4px-kenar-pay {
+    padding-top: 4px;
+}
+
+.ust-ic-8px-kenar-pay {
+    padding-top: 8px;
+}
+
+.ust-ic-16px-kenar-pay {
+    padding-top: 16px;
+}
+
+.ust-ic-24px-kenar-pay {
+    padding-top: 24px;
+}
+
+.ust-ic-32px-kenar-pay {
+    padding-top: 32px;
+}
+
+.alt-ic-otomatik-kenar-pay {
+    padding-bottom: auto;
+}
+
+.alt-ic-4px-kenar-pay {
+    padding-bottom: 4px;
+}
+
+.alt-ic-8px-kenar-pay {
+    padding-bottom: 8px;
+}
+
+.alt-ic-16px-kenar-pay {
+    padding-bottom: 16px;
+}
+
+.alt-ic-24px-kenar-pay {
+    padding-bottom: 24px;
+}
+
+.alt-ic-32px-kenar-pay {
+    padding-bottom: 32px;
+}
+
+
+
+
+/* Form elemanları */
+
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=tel],
+input[type=number],
+input[type=date],
+input[type=time],
+input[type=datetime-local],
+input[type=month],
+input[type=week],
+input[type=search],
+input[type=range],
+input[type=color],
+input[type=checkbox],
+input[type=radio],
+select,
+textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid var(--hafif-gri);
+    border-radius: 4px;
+    resize: vertical;
+    font-family: var(--font-Roboto);
+    font-size: var(--boyut-16-px);
+}
+
+
+
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #4a4a4a;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+
+/* Asagiya Dogru Kayan Menu */
+
+.asagiya-dogru-kayan-menu {
+    position: relative;
+    display: inline-block;
+
+
+}
+
+.asagiya-dogru-kayan-menu-icerik {
+    overflow: hidden;
+    position: absolute;
+    display: none;
+    min-width: 160px;
+    z-index: 1;
+    padding: 8px 8px 8px 32px;
+    background-color: var(--dumanli-beyaz);
+    box-shadow: 0px 0px 1px 1px var(--hafif-siyah);
+}
+
+.asagiya-dogru-kayan-menu-icerik a {
+    display: block;
+    color: var(--siyah);
+    padding: 12px 16px;
+    text-decoration: none;
+}
+
+.asagiya-dogru-kayan-menu-icerik a:hover {
+    background-color: var(--hafif-gri);
+}
+
+.asagiya-dogru-kayan-menu:hover .asagiya-dogru-kayan-menu-icerik {
+    display: block;
+}
+
+/* Üst Navigasyon Barı Elemanları */
+
+.ust-navigasyon {
+    overflow: hidden;
+    /* justify-content: space-between; */
+    align-items: center;
+    /* position: fixed; */
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    padding: 10px;
+}
+
+.ust-navigasyon-marka {
+
+    text-decoration: none;
+    font-size: 24px;
+    font-family: var(--font-Arial);
+    font-weight: bold;
+    color: var(--siyah);
+    margin-left: 10px;
+}
+
+.ust-navigasyon-navigasyon {
+    list-style: none;
+    display: flex;
+}
+
+.ust-navigasyon-navigasyon li {
+    margin-left: 30px;
+}
+
+.ust-navigasyon-navigasyon a {
+    color: var(--siyah);
+    text-decoration: none;
+    font-size: 18px;
+    font-family: var(--font-Arial);
+}
+
+.ust-navigasyon-navigasyon a:hover {
+    text-decoration: underline;
+}
+
+/* Yan Navigasyon Barı Elemanları */
+
+.yan-navigasyon {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+
+.yan-navigasyon-marka {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.yan-navigasyon-navigasyon {
+    list-style: none;
+}
+
+.yan-navigasyon-navigasyon li {
+    margin-bottom: 15px;
+}
+
+.yan-navigasyon-navigasyon a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.yan-navigasyon-navigasyon a:hover {
+    text-decoration: underline;
+}
+
+
+/* Dikey Navigasyon Barı Elemanları */
+
+.dikey-navigasyon {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--hafif-siyah);
+    padding: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dikey-navigasyon-link {
+    color: var(--beyaz);
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-bottom: 1px solid var(--dumanli-beyaz);
+  }
+  
+  .dikey-navigasyon-link:last-child {
+    border-bottom: none;
+  }
+  
+  .dikey-navigasyon-link:hover,
+  .dikey-navigasyon-link:focus {
+    background-color: #555;
+  }
+
+/* Resim Elemanları */
+
+.resim-yatay-sigdir {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.resim-dikey-sigdir {
+    width: auto;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.resim-otomatik-sigdir {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.resim-100-yuzde {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.resim-yuvarla {
+    border-radius: 50%;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.resim-merkeze-al {
+    object-position: center;
+}
+
+/* ----- Slayt Elemanları ---- */
+
+/* 1- Manuel Geçişli Slayt */
+
+.manuel-slayt-oynatıcı {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.manuel-slaytlar {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.manuel-slayt {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.manuel-slayt img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.manuel-slayt-navigasyon {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: var(--siyah);
+    margin: 0 5px;
+}
+
+
+input[type="radio"] {
+    display: inline;
+}
+
+#slayt-1:checked~.manuel-slaytlar {
+    transform: translateX(0);
+}
+
+#slayt-2:checked~.manuel-slaytlar {
+    transform: translateX(-100%);
+}
+
+#slayt-3:checked~.manuel-slaytlar {
+    transform: translateX(-200%);
+}
+
+
+#slayt-1:checked~.manuel-slayt-navigasyon label:nth-child(1),
+#slayt-2:checked~.manuel-slayt-navigasyon label:nth-child(2),
+#slayt-3:checked~.manuel-slayt-navigasyon label:nth-child(3) {
+    background-color: var(--hafif-gri);
+}
+
+
+
+/* Sağdan Sola kayan slayt */
+
+.slayt-film-seridi {
+    overflow: hidden;
+    height: 100%;
+    max-height: 500px;
+    box-shadow: 0px 0px 10px 1px var(--hafif-siyah);
+
+}
+
+.slayt-film-seridi-oynatici {
+    display: flex;
+    width: calc(500px * 6);
+    /* 250px = width of a slide. 6 = total number of slides */
+    animation: serit 9s linear infinite;
+}
+
+.tek-slayt {
+    width: 50%;
+    height: 100%;
+}
+
+.tek-slayt img {
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes serit {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-250px * 3));
+    }
+}
+
+
+
+
+/* Sola Sağa kayan slayt */
+
+
+
+.slayt-dikey {
+    overflow: hidden;
+    height: 100vh; /* Adjust according to your requirement */
+  }
+  
+  .slide-dikey-oynatici {
+    display: flex;
+    flex-direction: column;
+    animation: dikey-kaydir 30s linear infinite;
+    width: 100%;
+  }
+  
+  .slayt-dikey-tek {
+    max-height: 100%; 
+    width: 100%;
+
+  }
+  
+  .slayt-dikey-tek img {
+    width: 100%;
+    height: 100%; 
+    max-height: 100%; 
+    
+    object-fit: cover;
+  }
+  
+  @keyframes dikey-kaydir {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-300%); }
+  }
